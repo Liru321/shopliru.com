@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dịch vụ cày thuê Roblox uy tín</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f1f1f1; }
+    header { background: #2f3640; color: #fff; padding: 30px 0; text-align: center; }
+    main { max-width: 700px; margin: 30px auto; background: #fff; padding: 25px; border-radius: 12px; box-shadow: 0 4px 16px rgba(0,0,0,0.07);}
+    h2 { color: #2d3436; }
+    .price-list { margin: 16px 0; }
+    .price-list td, .price-list th { border: 1px solid #dfe6e9; padding: 8px 16px; }
+    .price-list { border-collapse: collapse; width: 100%; }
+    form > div { margin-bottom: 14px; }
+    label { display: block; margin-bottom: 4px; }
+    input, textarea { width: 100%; padding: 7px; border: 1px solid #b2bec3; border-radius: 6px;}
+    button { background: #0984e3; color: #fff; border: none; padding: 12px 28px; border-radius: 6px; cursor: pointer; }
+    button:hover { background: #74b9ff; }
+    .feedback { background: #dff9fb; border-left: 4px solid #00b894; margin: 10px 0; padding: 10px; }
+    footer { text-align: center; color: #636e72; padding: 12px; }
+    a { color: #0984e3; text-decoration: none;}
+    a:hover { text-decoration: underline;}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>DỊCH VỤ CÀY THUÊ ROBLOX UY TÍN</h1>
+    <p>Nhanh chóng - Giá rẻ - Bảo mật tuyệt đối</p>
+  </header>
+  <main>
+    <section>
+      <h2>Bảng giá dịch vụ</h2>
+      <table class="price-list">
+        <tr>
+          <th>Dịch vụ</th>
+          <th>Giá</th>
+        </tr>
+        <tr>
+          <td>Cày cấp (Level)</td>
+          <td>20k/10 cấp</td>
+        </tr>
+        <tr>
+          <td>Cày tiền (Money)</td>
+          <td>15k/1 triệu tiền</td>
+        </tr>
+        <tr>
+          <td>Cày nhiệm vụ đặc biệt</td>
+          <td>Liên hệ</td>
+        </tr>
+      </table>
+    </section>
+    <section>
+      <h2>Đặt dịch vụ</h2>
+      <form id="orderForm">
+        <div>
+          <label for="robloxUser">Tên đăng nhập Roblox:</label>
+          <input type="text" id="robloxUser" required>
+        </div>
+        <div>
+          <label for="service">Dịch vụ cần cày:</label>
+          <input type="text" id="service" placeholder="Ví dụ: Cày cấp, cày tiền..." required>
+        </div>
+        <div>
+          <label for="contact">Liên hệ (Zalo/Facebook/SĐT):</label>
+          <input type="text" id="contact" required>
+        </div>
+        <div>
+          <label for="note">Ghi chú thêm:</label>
+          <textarea id="note" rows="3"></textarea>
+        </div>
+        <button type="submit">Gửi yêu cầu</button>
+      </form>
+      <div id="formResult"></div>
+    </section>
+    <section>
+      <h2>Phản hồi khách hàng</h2>
+      <div class="feedback">"Cày rất nhanh, uy tín, sẽ ủng hộ lần sau!" - Minh</div>
+      <div class="feedback">"Được hỗ trợ tận tình, giá rẻ hơn chỗ khác." - Lan</div>
+      <div class="feedback">"Cày nhiệm vụ cực nhanh, cảm ơn shop!" - Hùng</div>
+    </section>
+    <section>
+      <h2>Liên hệ</h2>
+      <p>Zalo: <a href="https://zalo.me/yourzalo" target="_blank">https://zalo.me/yourzalo</a></p>
+      <p>Facebook: <a href="https://facebook.com/yourpage" target="_blank">https://facebook.com/yourpage</a></p>
+      <p>SĐT: 09xx.xxx.xxx</p>
+    </section>
+  </main>
+  <footer>
+    &copy; 2025 Dịch vụ cày thuê Roblox | Bảo mật 100%
+  </footer>
+  <script>
+    document.getElementById('orderForm').onsubmit = function(e) {
+      e.preventDefault();
+      // Lưu ý: Nếu bạn muốn gửi form về email hoặc server, cần backend!
+      document.getElementById('formResult').innerHTML = "<b>Gửi thành công!</b> Shop sẽ liên hệ bạn sớm qua Zalo/Facebook.";
+      this.reset();
+    }
+  </script>
+</body>
+</html>
